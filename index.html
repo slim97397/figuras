@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulacion del DOM</title>
+    <link rel="stylesheet" href="css/css.css"/>
+
+<body>
+    <section id="padre">
+        <div id="panelLateral">
+            <button onclick="cerrar()">X</button>
+            <h2>Menu principal</h2>
+            <ul><a href="#inicio">Inicio</a></ul>
+            <ul><a href="#perfil">Perfil</a></ul>
+            <ul><a href="#hobbies">Hobbies</a></ul>
+            <ul><a href="#skills">Skills</a></ul>
+            <ul><a href="#projects">Projects</a></ul>
+        </div>
+        <div id="panelSuperior">
+            <button onclick="cerrar1()">X</button>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/j9dfMBStyPo?si=SdYxqtiThlDlIJOJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <fila class="fila">
+            <div class="col-izq">
+                <h2>Botones</h2>
+                <button onclick="circulo()">Circulo</button>
+                <button onclick="rectangulo()">Rectangulo</button>
+                <button onclick="degradado()">Degradado</button>
+                <button onclick="gif()">gif</button>
+                <button onclick="luna()">Luna</button>
+                <button onclick="estrella()">Estrella</button>
+                <button onclick="moveTop()">Top</button>
+                <button onclick="moveBottom()">Bottom</button>
+                <button onclick="moveRight()">Right</button>
+                <button onclick="moveLeft()">Left</button>
+                <button onclick="moveDiagonal()">Diagonal</button>
+                <button onclick="panelLateral()">Panel Lateral</button>
+                <button onclick="panelSuperior()">Panel Superior</button>
+                <button onclick="bgGeneral()">Background general</button>
+                <button onclick="bgFigura()">BG figura ingresado</button>
+                <button onclick="bgFigurafondo()"> BG fondo figura por imagen</button>
+            </div>
+
+            <div class="col-der">
+                <h2 id="titulo">Figura</h2>
+
+                <div id="figura" class=""></div>
+            </div>
+        </fila>
+    </section>
+
+    <script src="js/llaba.js"></script>
+</body>
+</html>
